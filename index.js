@@ -11,27 +11,42 @@ function getComputerChoice(){
 
 //function to play a single round of rock paper scissors
 function playRound(playerSelection, computerSelection){
-    if(playerSelection.toLowerCase() === 'rock' && computerSelection.toLowerCase() === 'scissors'){
+    //making user and computer input case insensitive
+    let playerSelect = playerSelection.toLowerCase()
+    let computerSelect = computerSelection.toLowerCase()
+
+    //logic for the game
+    if(playerSelect === 'rock' && computerSelect === 'scissors'){
         return "You Win! Rock beats Scissors"
     }
-    else if(playerSelection.toLowerCase() === 'scissors' && computerSelection.toLowerCase() === 'paper'){
+    else if(playerSelect === 'scissors' && computerSelect === 'paper'){
         return "You Win! Scissors beats Paper"
     }
-    else if(playerSelection.toLowerCase() === 'paper' && computerSelection.toLowerCase() === 'rock'){
+    else if(playerSelect === 'paper' && computerSelect === 'rock'){
         return "You Win! Paper beats Rock"
     }
-    else if (playerSelection.toLowerCase() === computerSelection.toLowerCase()){
+    else if (playerSelect === computerSelect){
         return " It's a tie"
     }
     else{
         return "You loose"
     }
 }
-//getting user input
-const playerSelection = prompt("Choose Your Weapon between Rock, Paper, Scissors:")
 
-//getting computers input
-const computerSelection = getComputerChoice()
+//function to run the game
+function game(){
+    //getting user input
+    const playerSelection = prompt("Choose Your Weapon between Rock, Paper, Scissors:")
 
-//printing the output of the game to the console
-console.log(playRound(playerSelection,computerSelection))
+    //getting computers input
+    const computerSelection = getComputerChoice()
+
+    //printing the output of the game to the console
+    return console.log(playRound(playerSelection,computerSelection))
+}
+
+game()
+game()
+game()
+game()
+game()
