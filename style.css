@@ -1,16 +1,21 @@
 body{
-    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main-container{
     background-color: rgb(182, 145, 86);
-    width: 50%;
+    width: 60%;
     margin: 0 auto;  
-    padding: 1em;
+    padding: 2em 0;
     border-radius: 4px;
 }
-.container_text{
+.container_heading_text{
     font-family: 'Honk', system-ui;
     text-align: center;
+    font-size: 4rem;
+}
+.subheading_text{
+    text-align: center;
+    font-size: 2rem;
 }
 .game-container{
     padding: 3em 0;
@@ -19,9 +24,15 @@ body{
 }
 .game-container_box{
     border-radius: 8px;
-    width: 8%;
     background-color: rgb(210, 176, 123);
-    padding: 1em 3em;
+    padding: .5em 1.6em;
+    text-align: center;
+}
+.game-container_box:active{
+    border: 1.5px solid black;
+}
+hr{
+    border: 1px solid black;
 }
 .play_btn{
     display: flex;
@@ -29,9 +40,10 @@ body{
     margin-top: .5em;
 }
 button{
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: rgb(85, 65, 33);
     color: rgb(210, 176, 123);
     padding: .8em 2em;
+    font-size: 1rem;
     border: none;
 }
