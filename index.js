@@ -45,8 +45,4 @@ function game(){
     return console.log(playRound(playerSelection,computerSelection))
 }
 
-game()
-game()
-game()
-game()
-game()
+
