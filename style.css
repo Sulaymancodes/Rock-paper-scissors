@@ -2,14 +2,13 @@
     box-sizing: border-box;
 }
 body{
+    background-color: rgb(182, 145, 86);
+    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main-container{
-    background-color: rgb(182, 145, 86);
-    width: 60%;
+    width: 80%;
     margin: 0 auto;  
-    padding: 2em 0;
-    border-radius: 4px;
     max-width: 900px;
 }
 .container_heading_text{
@@ -19,8 +18,24 @@ body{
 }
 .subheading_text{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
+.subheading_text_2{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.p-vs-comp{
+    display: flex;
+    justify-content: center;
+}
+.player{
+    margin-right: 5em;
+}
+.q_icon{
+    text-align: center;
+    font-size: 2.2rem;
+}
+
 .game-container{
     padding: 3em 0;
     display: flex;
@@ -34,7 +49,9 @@ body{
     padding: .1em 1.6em;
     text-align: center;
 }
-
+.hover:hover{
+    background-color:rgb(249, 214, 157);
+}
 .game-container_box_1,
 .game-container_box_2{
     margin-right: 2em;
@@ -46,11 +63,18 @@ hr{
     border: 1px solid black;
 }
 
-button{
+.restart_btn{
     border-radius: 10px;
     background-color: rgb(85, 65, 33);
     color: rgb(210, 176, 123);
     padding: .8em 2em;
     font-size: 1rem;
     border: none;
+    margin:0 auto;
+    text-align: center;
+    width: 10em;
+}
+.restart_btn:hover{
+    background-color: rgb(136, 105, 54);
+    color: rgb(29, 21, 8);
 }
